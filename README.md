@@ -14,6 +14,8 @@ After finding the corresponding points, we can get the disparity of the two poin
             distance = camera_distance * focus_length / disparity 
 to get the depth of every pixel.
 
+This part of the code is in the [depth_basic.py](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/depth_basic.py)
+
 # Result images
 
 ![left.png](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/left.png)
