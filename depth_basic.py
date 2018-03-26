@@ -23,15 +23,6 @@ window_size = 15
 disparity_size = 50
 disparity_map = np.zeros(img1.shape)
 
-
-def smooth_cost(x, y, dd):
-	cost = 0
-	for dx in range(-2, 3):
-		for dy in range(-2, 3):
-			if (x+dx>=0 and x+dx<img1.shape[0] and y+dy>window_size//2 and y+dy<img1.shape[1]-window_size//2):
-				cost+=(disparity_map[x, y] + dd - disparity_map[x+dx, y+dy])**2
-	return smooth_lambda*cost
-
 delta_img = np.zeros([img1.shape[0], img1.shape[1], disparity_size])
 
 for d in range(1, disparity_size):
