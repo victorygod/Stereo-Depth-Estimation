@@ -16,6 +16,6 @@ to get the depth of every pixel.
 
 # Result images
 
-![left.jpg](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/left.png)
-![right.jpg](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/right.png)
-![ans_basic.jpg](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/ans_basic.png)
+![left.png](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/left.png)
+![right.png](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/right.png)
+![ans_basic.jpg](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/ans_basic.jpg)
