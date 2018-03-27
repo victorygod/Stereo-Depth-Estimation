@@ -31,8 +31,8 @@ To optimize this energy function is NP-hard problem. But we could use Dynamic Pr
 
 Here is the result for the Luna images.
 
-![left.png](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/AS15_10325.Panorama_376x3638.tif)
-![right.png](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/AS15_10320.Panorama_376x3638.tif)
+![left.png](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/left.jpg)
+![right.png](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/right.jpg)
 ![ans.jpg](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/ans.jpg)
 
 You can see the result provide more information comparing with the result without global optimization:
