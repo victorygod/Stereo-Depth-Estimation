@@ -21,3 +21,20 @@ This part of the code is in the [depth_basic.py](https://github.com/victorygod/S
 ![left.png](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/left.png)
 ![right.png](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/right.png)
 ![ans_basic.jpg](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/ans_basic.jpg)
+
+
+# Extension
+
+For images that have large blank regions, I try to use global optimization to cope with the blank regions. The idea is to minimize the energy function E = E_match + lambda * E_smooth. E_match is the original SAD error function. E_smooth here I use is: E_smooth = (disparity1-disparity2)^2/(|pixel1-pixel2|+1). It is base on the idea that the more close the color of the two pixels are, the more possible they are in the same depth.
+
+To optimize this energy function is NP-hard problem. But we could use Dynamic Programming to get a closer solution. Here is the code [depth.py](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/depth.py)
+
+Here is the result for the Luna images.
+
+![left.png](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/AS15_10325.Panorama_376x3638.tif)
+![right.png](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/AS15_10320.Panorama_376x3638.tif)
+![ans.jpg](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/ans.jpg)
+
+You can see the result provide more information comparing with the result without global optimization:
+
+![ans_basic.jpg](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/ans_basic_luna.jpg)
