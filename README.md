@@ -33,7 +33,7 @@ Here is the result for the Luna images.
 
 ![left.png](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/left.jpg)
 ![right.png](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/right.jpg)
-![ans.jpg](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/ans.jpg)
+![ans.jpg](https://github.com/victorygod/Stereo-Depth-Estimation/blob/master/ans_luna.jpg)
 
 You can see the result provide more information comparing with the result without global optimization:
 
